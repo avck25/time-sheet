@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link href="/myBootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .input {
+                
+                padding:1em;
+            }
+
+            nav{
+			position: fixed;
+			left: 0;
+			background-color: black;
+			width: 100%;
+		}
+		
+		nav {
+			top: 0;
+		}
+		
+		
+		
+		nav ul {
+			padding: 0;
+			list-style-type: none;
+			min-width: 400px;
+            width: 80%;
+			margin: 1em auto;
+			color: white;
+		}
+		
+		nav ul{
+			width: 80%;
+			margin: 1em auto;
+			color: white;
+		}
+		
+		nav li {
+			display: inline;
+			margin-right: 16px;
+		}
+
+        nav li:hover {
+            cursor: pointer;
+        }
+
+        #theFormDiv, #response, #calculate {
+            display: none;
+        }
+
+        .form-group {
+            display: block;
+            text-align: center;
+        }
+
+        .form-group label, .form-group input{
+            display: inline;
+
+        }
+
+        .form-group label {
+            width: 10%;
+            text-align: right;
+
+        }
+
+        .form-group input {
+            width: 20%;
+        }
+
+        #header {
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-size: 2em;
+        }
+        #submitDiv {
+            width: 100%;
+            text-align: center;
+        } 
+        </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="addClient">add name</li>
+            <li id="calculateHours">calculate hours</li>
+        </ul>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Chana's Babysitting Center</h1>
+        <h2>Thank You for all that you do</h2>
+    </div>
+
+    <div id="theFormDiv" class="well">
+        <form id="theForm" class="form">
+
+        </form>
+        <div id="submitDiv">
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <div id="response" class="well text-center">
+        <div id="responseText"></div>
+        <button id="yes" class="btn btn-primary">Yes</button>
+        <button id="no" class="btn btn-primary">No</button>
+    </div>
+    <div id="calculate">
+
+    </div>
+</body>
+<script src="/jquery-3.1.1.min.js"></script>
+<script src="babysitting.js"></script>
+
+
+
+</html>
